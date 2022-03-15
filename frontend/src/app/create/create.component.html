@@ -1,0 +1,58 @@
+<html>
+
+<body>
+  <form [formGroup]="loginForm" (ngSubmit)="collectData()">
+    <div class="forminside">
+      <h1>Register Form</h1>
+    <hr class="new5">
+
+    <!-- show error msg to user -->
+    <div *ngIf="errormsg" class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>{{errormsg}}</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    
+
+    <!-- show success msg to user.. -->
+    <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>{{successmsg}}</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<br><br>
+    <div class="form-group">
+      <label><b>First name</b></label>
+      <input type="text" class="form-control" formControlName="fisrtname" placeholder="First-Name">
+    </div>
+
+    <div class="form-group">
+      <label><b>Last Name</b></label>
+      <input type="text" class="form-control" formControlName="lastname" placeholder="Last-Name">
+    </div>
+
+    <div class="form-group">
+      <label><b>Email</b></label>
+      <input type="email" class="form-control" formControlName="email" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+      <label><b>Date of birth</b></label>
+      <input type="DATE" [(ngModel)]="age" class="form-control" formControlName="dob" placeholder="dataofbirth">
+      <div style="color: red;" *ngIf="show">Your Age is Below 18</div>
+      
+    </div>
+    <div class="form-group">
+      <label for="number"><b>PhoneNumber</b></label>
+      <input type="tel" class="form-control" formControlName="phone" placeholder="PhoneNumber">
+    </div>
+    <div class="styling">
+      <button class="btn btn-success"><b>submit</b></button>
+    </div>
+
+    </div>
+    
+  </form>
+
+
+</body>
+
+</html>

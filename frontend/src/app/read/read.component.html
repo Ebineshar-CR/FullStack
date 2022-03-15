@@ -1,0 +1,32 @@
+<div class="container mt-5">
+
+    <!-- <table class="table table-dark table-striped"> -->
+        <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">FirstName</th>
+                <th scope="col">LastName</th>
+                <th scope="col">Email</th>
+                <th scope="col">DOB</th>
+                <th scope="col">PhoneNo</th>
+                <th scope="col">Action</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let us of readData">
+                <th scope="row">{{us.id}}</th>
+                <td>{{us.fisrtname}}</td>
+                <td>{{us.lastname}}</td>
+                <td>{{us.email}}</td>
+                <td>{{us.dob}}</td>
+                <td>{{us.phone}}</td>
+                <td class="data"><button class="btn btn-sm btn-primary">Edit</button>&nbsp;<button class="btn btn-sm btn-danger">Delete</button></td>
+             
+            </tr>
+
+        </tbody>
+    </table>
+</div>

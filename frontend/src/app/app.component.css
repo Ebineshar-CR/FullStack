@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+nav h3{
+color: whitesmoke;
+}
+  /* .styling{
+    background: url(src/assets/image/plain5.jpeg);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}   */
+/* .container{
+    background-color: rgb(235, 38, 38);
+} */
+.navbar{
+    /* background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%); */
+    background: rgb(2, 1, 1);
+}

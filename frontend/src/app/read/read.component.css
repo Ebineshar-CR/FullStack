@@ -1,0 +1,17 @@
+.table{
+    border: #010305;
+    border-color: #2e4f70;
+}
+
+thead {
+    background: linear-gradient(to left, #a6e2f6 0%, #f5a8cf 100%);
+    color: white;
+}
+.btn {
+    margin-right: 5px;
+    width: 69px;
+    height: auto;
+}
+.data{
+    text-align: center;
+}
